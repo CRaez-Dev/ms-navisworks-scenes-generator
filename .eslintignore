@@ -1,0 +1,7 @@
+
+build/*
+public/*
+dist/*
+.vscode/*
+node_modules
+generated
