@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "8bef75aa-0c88-4695-8eea-e8b533f11e36",
+		"name": "Navisworks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23884991"
+	},
+	"item": [
+		{
+			"name": "Process file",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "xmlFile",
+							"type": "file",
+							"src": "/Users/raezlab/Downloads/Test.xml"
+						},
+						{
+							"key": "settingFile",
+							"type": "file",
+							"src": "/Users/raezlab/Downloads/01. p20_HB.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/navisworks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"navisworks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
